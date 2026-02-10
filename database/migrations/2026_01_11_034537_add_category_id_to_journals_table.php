@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('main_journals', function (Blueprint $table) {
-           $table->string('department')->nullable();
+        Schema::table('journals', function (Blueprint $table) {
+            $table->foreignId('category_id')->constrained()->cascadeOnDelete();
         });
     }
 
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('main_journals', function (Blueprint $table) {
+        Schema::table('journals', function (Blueprint $table) {
             //
         });
     }

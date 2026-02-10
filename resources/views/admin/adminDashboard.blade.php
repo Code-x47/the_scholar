@@ -339,10 +339,12 @@ body {
   <div class="tabs-container">
     <div class="tabs-header">
       <div class="tabs">
+        
         <button class="tab active" data-tab="overview">Overview</button>
         <button class="tab" data-tab="submissions">Submissions</button>
         <button class="tab" data-tab="journals">Journals</button>
         <button class="tab" data-tab="reviewers">Reviewers</button>
+        
       </div>
     </div>
 
@@ -375,7 +377,7 @@ body {
       </div>
     </div>
 
-    <div class="tab-content" id="journals">
+  <div class="tab-content" id="journals">
     <div class="table-container">
         <div class="table-header">
         <h2>Research Journals</h2>
@@ -431,6 +433,9 @@ body {
         </div>
       </div>
     </div>
+
+
+
   </div>
 </div>
 

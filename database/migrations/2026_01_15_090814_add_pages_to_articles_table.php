@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('main_journals', function (Blueprint $table) {
-             $table->enum('status', ['submitted','under_review','rejected','published'])->default('submitted');
+        Schema::table('articles', function (Blueprint $table) {
+             $table->string('pages')->nullable();
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('main_journals', function (Blueprint $table) {
-            $table->enum('status', ['submitted','under_review','rejected','published'])->default('submitted');
+        Schema::table('articles', function (Blueprint $table) {
+            //
         });
     }
 };
